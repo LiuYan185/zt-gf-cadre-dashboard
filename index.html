@@ -56,24 +56,24 @@
   .ov-card .trend-cells { font-size: 9px; line-height: 1.6; font-variant-numeric: tabular-nums; }
   .ov-card .trend-cells span { display: inline-block; width: 21px; text-align: center; }
   .ov-card .mid-info { font-size: 13px; color: #333; margin-top: 2px; font-weight: 500; }
-  .ov-card .mid-info .num-red, .ov-card .small-info .num-red, .ov-card .num-highlight.num-red { color: #e02020 !important; font-weight: 700; }
-  .ov-card .num-highlight.text-green { color: #00a854 !important; font-weight: 700; }
+  .ov-card .mid-info .num-red, .ov-card .small-info .num-red, .ov-card .num-highlight.num-red { color: #ff3333 !important; font-weight: 700; }
+  .ov-card .num-highlight.text-green { color: #00c853 !important; font-weight: 700; }
   .ov-card .bottom-info { font-size: 11px; color: #333; }
   .ov-card.group-card .bottom-info { color: #fff !important; }
   .ov-card .num-highlight { font-size: 15px; font-weight: 700; line-height: 1.1; color: #333; }
   .ov-card.group-card .num-highlight { color: #fff !important; }
-  .ov-card.group-card .num-highlight.text-green { color: #00a854 !important; }
-  .ov-card.group-card .num-highlight.num-red { color: #e02020 !important; }
+  .ov-card.group-card .num-highlight.text-green { color: #00c853 !important; }
+  .ov-card.group-card .num-highlight.num-red { color: #ff3333 !important; }
   .ov-card.group-card { background: #1a3a6b !important; min-width: 65px; }
   .ov-card.group-card .bu-name, .ov-card.group-card .big-num, .ov-card.group-card .small-info, .ov-card.group-card .mid-info { color: #fff !important; }
   .ov-card.group-card .big-num { font-size: 19px; }
-  .ov-card.group-card .small-info { font-size: 11px; color: rgba(255,255,255,0.95) !important; }
-  .ov-card.group-card .net-label { font-size: 12px; color: rgba(255,255,255,0.9) !important; }
-  .ov-card.group-card .info-label { color: rgba(255,255,255,0.9) !important; }
-  .ov-card:not(.group-card) .text-red { color: #e02020 !important; }
-  .ov-card.group-card .text-red { color: #e02020 !important; }
-  .ov-card:not(.group-card) .text-green { color: #00a854 !important; font-weight: 700; }
-  .ov-card.group-card .text-green { color: #00a854 !important; }
+  .ov-card.group-card .small-info { font-size: 11px; color: #fff !important; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.25); }
+  .ov-card.group-card .net-label { font-size: 12px; color: rgba(255,255,255,0.95) !important; }
+  .ov-card.group-card .info-label { color: rgba(255,255,255,0.95) !important; }
+  .ov-card:not(.group-card) .text-red { color: #ff3333 !important; }
+  .ov-card.group-card .text-red { color: #ff3333 !important; }
+  .ov-card:not(.group-card) .text-green { color: #00c853 !important; font-weight: 700; }
+  .ov-card.group-card .text-green { color: #00c853 !important; }
   .ov-card .net-label { font-size: 11px; font-weight: 400; color: #888; }
   .ov-card.group-card .net-label { color: rgba(255,255,255,0.6); }
   .ov-card .info-label { font-size: 10px; font-weight: 400; color: #888; }
@@ -100,12 +100,12 @@
   .ov-sub-card .sub-num { font-size: 14px; font-weight: 700; line-height: 1.2; font-variant-numeric: tabular-nums; }
   .ov-sub-card .sub-level { font-size: 10px; font-weight: 600; color: #555; line-height: 1.2; margin-bottom: 1px; }
   .ov-sub-card .sub-extra { font-size: 9px; color: #555; margin-top: 1px; }
-  .ov-sub-card .sub-num.num-red { color: #e02020 !important; }
-  .ov-sub-card .sub-num.text-red { color: #e02020 !important; }
-  .ov-sub-card .sub-num.text-green { color: #00a854 !important; }
-  .ov-sub-card .sub-extra .num-red { color: #e02020 !important; font-weight: 700; }
-  .ov-sub-card .sub-extra .text-green { color: #00a854 !important; font-weight: 700; }
-  .ov-sub-card .sub-extra .text-red { color: #e02020 !important; font-weight: 700; }
+  .ov-sub-card .sub-num.num-red { color: #ff3333 !important; }
+  .ov-sub-card .sub-num.text-red { color: #ff3333 !important; }
+  .ov-sub-card .sub-num.text-green { color: #00c853 !important; }
+  .ov-sub-card .sub-extra .num-red { color: #ff3333 !important; font-weight: 700; }
+  .ov-sub-card .sub-extra .text-green { color: #00c853 !important; font-weight: 700; }
+  .ov-sub-card .sub-extra .text-red { color: #ff3333 !important; font-weight: 700; }
   .ov-sub-card .sub-label { font-size: 9px; font-weight: 400; color: #888; }
   .group-group .ov-sub-card .sub-label { color: rgba(255,255,255,0.6); }
   .ov-sub-card.sub-high { background: #EEEDFE; }
@@ -115,15 +115,15 @@
   .group-group .ov-sub-card.sub-mid { background: rgba(225,245,238,0.3); }
   .group-group .ov-sub-card.sub-base { background: rgba(255,240,232,0.3); }
   .group-group .ov-sub-card .sub-num { color: #fff !important; font-size: 15px; }
-  .group-group .ov-sub-card .sub-level { color: rgba(255,255,255,0.9); font-size: 11px; }
-  .group-group .ov-sub-card .sub-extra { color: rgba(255,255,255,0.9); font-size: 10px; }
-  .group-group .ov-sub-card .sub-label { color: rgba(255,255,255,0.85); }
-  .group-group .ov-sub-card .sub-num.num-red { color: #e02020 !important; }
-  .group-group .ov-sub-card .sub-num.text-red { color: #e02020 !important; }
-  .group-group .ov-sub-card .sub-num.text-green { color: #00a854 !important; }
-  .group-group .ov-sub-card .sub-extra .num-red { color: #e02020 !important; }
-  .group-group .ov-sub-card .sub-extra .text-green { color: #00a854 !important; }
-  .group-group .ov-sub-card .sub-extra .text-red { color: #e02020 !important; }
+  .group-group .ov-sub-card .sub-level { color: #fff !important; font-size: 11px; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.25); }
+  .group-group .ov-sub-card .sub-extra { color: #fff !important; font-size: 10px; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.25); }
+  .group-group .ov-sub-card .sub-label { color: rgba(255,255,255,0.95) !important; }
+  .group-group .ov-sub-card .sub-num.num-red { color: #ff3333 !important; }
+  .group-group .ov-sub-card .sub-num.text-red { color: #ff3333 !important; }
+  .group-group .ov-sub-card .sub-num.text-green { color: #00c853 !important; }
+  .group-group .ov-sub-card .sub-extra .num-red { color: #ff3333 !important; }
+  .group-group .ov-sub-card .sub-extra .text-green { color: #00c853 !important; }
+  .group-group .ov-sub-card .sub-extra .text-red { color: #ff3333 !important; }
   /* ===== 板块一：层级明细 行式布局（2026-08）===== */
   .active-row-table { display: flex; flex-direction: column; gap: 3px; flex: 1 1 100%; min-width: 0; }
   .art-row { display: flex; gap: 3px; align-items: stretch; }
@@ -137,11 +137,11 @@
   .art-cell { flex: 1; min-width: 0; border-radius: 4px; padding: 3px 2px; text-align: center; display: flex; flex-direction: column; justify-content: center; background: #f5f8ff; border: 1px solid #e6ecf7; }
   .art-cell.group-cell { background: #1a3a6b; border-color: #1a3a6b; }
   .art-cell .cell-num { font-size: 15px; font-weight: 700; line-height: 1.15; font-variant-numeric: tabular-nums; color: #333; }
-  .art-cell .cell-num.text-green { color: #00a854 !important; }
-  .art-cell .cell-num.text-red { color: #e02020 !important; }
+  .art-cell .cell-num.text-green { color: #00c853 !important; }
+  .art-cell .cell-num.text-red { color: #ff3333 !important; }
   .art-cell .cell-sub { font-size: 10px; color: #777; margin-top: 1px; white-space: nowrap; }
   .art-cell.group-cell .cell-num { color: #fff; font-size: 16px; }
-  .art-cell.group-cell .cell-sub { color: rgba(255,255,255,0.9); font-size: 11px; }
+  .art-cell.group-cell .cell-sub { color: #fff !important; font-size: 11px; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.25); }
   .art-cell.cell-empty { background: #f5f7fa; border-color: #eef1f5; }
   .art-cell.cell-empty .cell-num, .art-cell.cell-empty .cell-sub { color: #c0c8d4; }
   .art-cell.drill-clickable { cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; }
@@ -164,8 +164,8 @@
   .trend-month-card.tm-high { background: #EEEDFE; border-color: #ddd9fb; }
   .trend-month-card.tm-mid { background: #E1F5EE; border-color: #c9ecdc; }
   .trend-month-card.tm-base { background: #FFF0E8; border-color: #f8dccb; }
-  .trend-month-card .tm-num.text-green { color: #00a854; }
-  .trend-month-card .tm-num.text-red { color: #e02020; }
+  .trend-month-card .tm-num.text-green { color: #00c853; }
+  .trend-month-card .tm-num.text-red { color: #ff3333; }
   /* ===== 入职/离职板块：BU 切换按钮组分隔线 ===== */
   .filter-divider { width: 1px; height: 18px; background: #d5deee; margin: 0 3px; flex: none; }
   /* 月度趋势模式：月度筛选行内切换为 BU 按钮组（2026-08）*/
@@ -242,7 +242,7 @@
   .detail-search-input:focus { border-color: #2c5ba8; box-shadow: 0 0 0 2px rgba(44,91,168,0.1); }
   .detail-search-input::placeholder { color: #bbb; }
   .detail-search-clear { border: none; background: none; color: #999; cursor: pointer; font-size: 14px; padding: 2px 4px; display: none; }
-  .detail-search-clear:hover { color: #e02020; }
+  .detail-search-clear:hover { color: #ff3333; }
 
   /* 可拖拽列宽 */
   .detail-table-wrap { overflow-x: auto; max-height: 500px; overflow-y: auto; border: 1px solid #dde3ef; border-radius: 6px; }
@@ -305,8 +305,8 @@
   .drill-data-table tr:last-child td { border-bottom: none; }
   .drill-data-table .num-col { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
   .drill-data-table .net-row td { background: #f8fafd; font-weight: 700; color: #1a3a6b; border-top: 2px solid #2c5ba8; }
-  .drill-net-positive { color: #00a854; }
-  .drill-net-negative { color: #e02020; }
+  .drill-net-positive { color: #00c853; }
+  .drill-net-negative { color: #ff3333; }
   .drill-data-count { font-size: 12px; color: #666; margin-bottom: 8px; font-weight: 500; }
   .drill-vacancy-list { max-height: 260px; overflow: auto; border: 1px solid #eef1f7; border-radius: 6px; }
   .drill-vacancy-list table { width: auto; min-width: 100%; border-collapse: collapse; font-size: 12px; }
@@ -3414,14 +3414,14 @@ function openNetGrowthModal(bu, level) {
   let html = '<div class="drill-section-title">净增明细</div>';
   html += '<table class="drill-data-table"><thead><tr><th>指标</th><th class="num-col">人数</th></tr></thead><tbody>';
   html += '<tr><td>累计入职人数</td><td class="num-col">' + fmtNumD(d.join) + '</td></tr>';
-  html += '<tr><td>累计离职人数</td><td class="num-col" style="color:#e02020;">' + fmtNumD(d.resign) + '</td></tr>';
-  html += '<tr><td>累计晋升人数<br><span style="font-size:10px;color:#999;">' + promoSuffix + '</span></td><td class="num-col" style="color:#00a854;">' + fmtNumD(d.promo) + '</td></tr>';
-  html += '<tr><td>累计降级人数<br><span style="font-size:10px;color:#999;">' + demoSuffix + '</span></td><td class="num-col" style="color:#e02020;">' + fmtNumD(d.demo) + '</td></tr>';
-  html += '<tr><td>累计转岗进入人数<br><span style="font-size:10px;color:#999;">（P岗→当前BU+层级，职级不变）</span></td><td class="num-col" style="color:#00a854;">' + fmtNumD(d.zgIn) + '</td></tr>';
-  html += '<tr><td>累计转岗退出人数<br><span style="font-size:10px;color:#999;">（当前BU+层级→P岗，职级不变）</span></td><td class="num-col" style="color:#e02020;">' + fmtNumD(d.zgOut) + '</td></tr>';
-  html += '<tr><td>跨BU调入人数</td><td class="num-col" style="color:#00a854;">' + fmtNumD(d.transferIn) + '</td></tr>';
-  html += '<tr><td>跨BU调出人数</td><td class="num-col" style="color:#e02020;">' + fmtNumD(d.transferOut) + '</td></tr>';
-  html += '<tr><td>特殊晋升调出<br><span style="font-size:10px;color:#999;">（当前BU+层级→P岗且职级上升）</span></td><td class="num-col" style="color:#e02020;">' + fmtNumD(d.specialPromoOut) + '</td></tr>';
+  html += '<tr><td>累计离职人数</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.resign) + '</td></tr>';
+  html += '<tr><td>累计晋升人数<br><span style="font-size:10px;color:#999;">' + promoSuffix + '</span></td><td class="num-col" style="color:#00c853;">' + fmtNumD(d.promo) + '</td></tr>';
+  html += '<tr><td>累计降级人数<br><span style="font-size:10px;color:#999;">' + demoSuffix + '</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.demo) + '</td></tr>';
+  html += '<tr><td>累计转岗进入人数<br><span style="font-size:10px;color:#999;">（P岗→当前BU+层级，职级不变）</span></td><td class="num-col" style="color:#00c853;">' + fmtNumD(d.zgIn) + '</td></tr>';
+  html += '<tr><td>累计转岗退出人数<br><span style="font-size:10px;color:#999;">（当前BU+层级→P岗，职级不变）</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.zgOut) + '</td></tr>';
+  html += '<tr><td>跨BU调入人数</td><td class="num-col" style="color:#00c853;">' + fmtNumD(d.transferIn) + '</td></tr>';
+  html += '<tr><td>跨BU调出人数</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.transferOut) + '</td></tr>';
+  html += '<tr><td>特殊晋升调出<br><span style="font-size:10px;color:#999;">（当前BU+层级→P岗且职级上升）</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.specialPromoOut) + '</td></tr>';
   html += '<tr class="net-row"><td>净增（入职-离职+晋升-降级+调入-调出+转岗进入-转岗退出-特殊晋升调出）</td><td class="num-col ' + netClass + '">' + netSign + fmtNumD(d.net) + '</td></tr>';
   html += '</tbody></table>';
 
@@ -3442,7 +3442,7 @@ function openFillRateModal(bu, level, fga) {
 
   const d = getFillRateFromDetail(bu, level, fga);
   if (!d) {
-    showDrillModal(title, '<p style="color:#e02020;text-align:center;padding:20px;">⚠️ 编制数据不可用<br><small style="color:#999;">该BU+层级的满编明细数据未找到</small></p>', 'fill', bu, level);
+    showDrillModal(title, '<p style="color:#ff3333;text-align:center;padding:20px;">⚠️ 编制数据不可用<br><small style="color:#999;">该BU+层级的满编明细数据未找到</small></p>', 'fill', bu, level);
     return;
   }
 
@@ -3452,13 +3452,13 @@ function openFillRateModal(bu, level, fga) {
   html += '<table class="drill-data-table"><thead><tr><th>指标</th><th class="num-col">数量</th></tr></thead><tbody>';
   html += '<tr><td>编制总数</td><td class="num-col">' + fmtNumD(d.total) + '</td></tr>';
   html += '<tr><td>在编人数</td><td class="num-col">' + fmtNumD(d.filled) + '</td></tr>';
-  html += '<tr><td>空编人数</td><td class="num-col" style="color:#e02020;">' + fmtNumD(d.vacant) + '</td></tr>';
+  html += '<tr><td>空编人数</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.vacant) + '</td></tr>';
   html += '</tbody></table>';
   if (fga) {
     // 层级明细×前台/中后台 联动弹窗：明细已按所选口径过滤，仅展示该维度空编数
     html += '<div class="drill-section-title" style="margin-top:16px;">空编人数（' + fga + '）</div>';
     html += '<table class="drill-data-table"><thead><tr><th>维度</th><th class="num-col">空编人数</th></tr></thead><tbody>';
-    html += '<tr><td>' + fga + '</td><td class="num-col" style="color:#e02020;">' + fmtNumD(d.vacant) + '</td></tr>';
+    html += '<tr><td>' + fga + '</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.vacant) + '</td></tr>';
     html += '</tbody></table>';
   } else {
     // 按 前台/中后台 统计 (7月编制 sheet col 46)
@@ -3471,7 +3471,7 @@ function openFillRateModal(bu, level, fga) {
     // 2) 空编数前/中后台区分
     html += '<div class="drill-section-title" style="margin-top:16px;">空编人数 — 前台/中后台区分</div>';
     html += '<table class="drill-data-table"><thead><tr><th>维度</th><th class="num-col">前台</th><th class="num-col">中后台</th><th class="num-col">合计</th></tr></thead><tbody>';
-    html += '<tr><td>空编人数</td><td class="num-col" style="color:#e02020;">' + fmtNumD(fgaVacFront) + '</td><td class="num-col" style="color:#e02020;">' + fmtNumD(fgaVacBack) + '</td><td class="num-col" style="color:#e02020;">' + fmtNumD(d.vacant) + '</td></tr>';
+    html += '<tr><td>空编人数</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(fgaVacFront) + '</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(fgaVacBack) + '</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.vacant) + '</td></tr>';
     html += '</tbody></table>';
   }
 
@@ -3483,7 +3483,7 @@ function openFillRateModal(bu, level, fga) {
     });
     html += '</tbody></table></div>';
   } else {
-    html += '<p style="font-size:12px;color:#00a854;margin-top:10px;">该维度无空编岗位</p>';
+    html += '<p style="font-size:12px;color:#00c853;margin-top:10px;">该维度无空编岗位</p>';
   }
 
   showDrillModal(title, html, 'fill', bu, level);
@@ -3495,7 +3495,7 @@ function openFillFgaModal(bu, fga) {
   const title = buLabel + ' · ' + fga;
 
   if (!BIANZHI_DATA || !BIANZHI_DATA.length) {
-    showDrillModal(title, '<p style="color:#e02020;text-align:center;padding:20px;">⚠️ 编制数据不可用</p>', 'fill', bu, fga);
+    showDrillModal(title, '<p style="color:#ff3333;text-align:center;padding:20px;">⚠️ 编制数据不可用</p>', 'fill', bu, fga);
     return;
   }
   const bus = (bu === '集团合计') ? DATA.bu_order.filter(b => b !== '集团合计') : [bu];
@@ -3508,8 +3508,8 @@ function openFillFgaModal(bu, fga) {
   html += '<div class="drill-section-title">满编明细（' + fga + '）</div>';
   html += '<table class="drill-data-table"><thead><tr><th>指标</th><th class="num-col">数量</th></tr></thead><tbody>';
   html += '<tr><td>编制总数</td><td class="num-col">' + fmtNumD(all.length) + '</td></tr>';
-  html += '<tr><td>在编人数</td><td class="num-col" style="color:#00a854;">' + fmtNumD(filled.length) + '</td></tr>';
-  html += '<tr><td>空编人数</td><td class="num-col" style="color:#e02020;">' + fmtNumD(vacant.length) + '</td></tr>';
+  html += '<tr><td>在编人数</td><td class="num-col" style="color:#00c853;">' + fmtNumD(filled.length) + '</td></tr>';
+  html += '<tr><td>空编人数</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(vacant.length) + '</td></tr>';
   html += '<tr class="net-row"><td>满编率</td><td class="num-col">' + (rate !== null ? (rate * 100).toFixed(1) + '%' : '-') + '</td></tr>';
   html += '</tbody></table>';
 
@@ -3520,8 +3520,8 @@ function openFillFgaModal(bu, fga) {
     const la = all.filter(r => r.level === lv);
     const lf = la.filter(r => r.is_active === '在职');
     const lvRate = la.length ? (lf.length / la.length * 100).toFixed(1) + '%' : '-';
-    const lowCls = (la.length && lf.length / la.length < 0.70) ? ' style="color:#e02020;"' : '';
-    html += '<tr><td>' + lv + '</td><td class="num-col">' + fmtNumD(la.length) + '</td><td class="num-col">' + fmtNumD(lf.length) + '</td><td class="num-col" style="color:#e02020;">' + fmtNumD(la.length - lf.length) + '</td><td class="num-col"' + lowCls + '>' + lvRate + '</td></tr>';
+    const lowCls = (la.length && lf.length / la.length < 0.70) ? ' style="color:#ff3333;"' : '';
+    html += '<tr><td>' + lv + '</td><td class="num-col">' + fmtNumD(la.length) + '</td><td class="num-col">' + fmtNumD(lf.length) + '</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(la.length - lf.length) + '</td><td class="num-col"' + lowCls + '>' + lvRate + '</td></tr>';
   });
   html += '</tbody></table>';
 
@@ -3536,7 +3536,7 @@ function openFillFgaModal(bu, fga) {
       html += '<p style="font-size:11px;color:#999;margin-top:6px;">（仅显示前 200 条，共 ' + vacant.length + ' 条）</p>';
     }
   } else {
-    html += '<p style="font-size:12px;color:#00a854;margin-top:10px;">该维度无空编岗位</p>';
+    html += '<p style="font-size:12px;color:#00c853;margin-top:10px;">该维度无空编岗位</p>';
   }
 
   showDrillModal(title, html, 'fill', bu, fga);
@@ -3652,7 +3652,7 @@ function openResignDrillModal(bu, level) {
 
 // ===== 板块五：晋升/降级/转岗穿透弹窗 =====
 var PROMO_TYPE_ORDER = { '晋升': 0, '转岗进入': 1, '降级': 2, '转岗退出': 3, '特殊晋升退出': 4 };
-var PROMO_TYPE_COLOR = { '晋升': '#00a854', '转岗进入': '#1a78c2', '降级': '#e02020', '转岗退出': '#e67e22', '特殊晋升退出': '#8e44ad' };
+var PROMO_TYPE_COLOR = { '晋升': '#00c853', '转岗进入': '#1a78c2', '降级': '#ff3333', '转岗退出': '#e67e22', '特殊晋升退出': '#8e44ad' };
 // 各类型归属 BU 的口径：进入类按 post_bu，退出类按 pre_bu
 var PROMO_TYPE_BY_POST = { '晋升': true, '转岗进入': true, '降级': false, '转岗退出': false, '特殊晋升退出': false };
 function openPromoDrillModal(bu) {
