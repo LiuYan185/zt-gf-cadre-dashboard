@@ -326,7 +326,7 @@
 </style>
 <meta property="og:type" content="website" />
 <meta property="og:title" content="集团干部看板" />
-<meta property="og:description" content="纵腾集团干部报表（2026年9月）0930版" />
+<meta property="og:description" content="纵腾集团干部报表（2026年9月）数据更新至 2026/10/9" />
 <meta property="og:url" content="https://liuyan185.github.io/zt-gf-cadre-dashboard/" />
 </head>
 <body>
@@ -535,7 +535,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="page-wrapper" id="pageWrapper" style="display:none">
   <div id="header">
     <h1 id="header-title">📊 集团干部报表</h1>
-    <div id="header-subtitle">数据更新时间：2026/10/8；累计数据时间范围：2026/1/1—2026/09/30</div>
+    <div id="header-subtitle">数据更新时间：2026/10/9；累计数据时间范围：2026/1/1—2026/09/30</div>
     <div class="user-bar" id="userBar" style="display:none">
       <span>当前用户：</span><span class="user-bu" id="userLabel"></span>
       <span class="logout-link" onclick="doLogout()">退出登录</span>
@@ -3390,10 +3390,10 @@ function openNetGrowthModal(bu, level) {
   const title = buLabel + ' · ' + lvLabel;
   const isXiaoji = (level === '小计');
 
-  // 2026-09 口径调整：转岗进入（P岗→当前BU+层级，职级不变）已统一归入「晋升」，
-  // 晋升 = P岗→当前BU+层级（不再区分职级是否改变）；转岗退出仍为 当前BU+层级→P岗（职级不变）
-  const promoSuffix = '（P岗→当前BU+层级）';
-  const demoSuffix = '（当前BU+层级→P岗，职级下降）';
+  // 2026-09 口径调整：转岗进入（P岗→当前BU+M岗层级，职级不变）已统一归入「晋升」，
+  // 晋升 = P岗→当前BU+M岗层级（不再区分职级是否改变）；转岗退出仍为 当前BU+M岗层级→P岗（职级不变）
+  const promoSuffix = '（P岗→当前BU+M岗层级）';
+  const demoSuffix = '（当前BU+M岗层级→P岗，职级下降）';
 
   let html = '<div class="drill-section-title">净增明细</div>';
   html += '<table class="drill-data-table"><thead><tr><th>指标</th><th class="num-col">人数</th></tr></thead><tbody>';
@@ -3401,16 +3401,20 @@ function openNetGrowthModal(bu, level) {
   html += '<tr><td>累计离职人数</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.resign) + '</td></tr>';
   html += '<tr><td>累计晋升人数<br><span style="font-size:10px;color:#999;">' + promoSuffix + '</span></td><td class="num-col" style="color:#00c853;">' + fmtNumD(d.promo) + '</td></tr>';
   html += '<tr><td>累计降级人数<br><span style="font-size:10px;color:#999;">' + demoSuffix + '</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.demo) + '</td></tr>';
-  html += '<tr><td>累计转岗退出人数<br><span style="font-size:10px;color:#999;">（当前BU+层级→P岗，职级不变）</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.zgOut) + '</td></tr>';
+  html += '<tr><td>累计转岗退出人数<br><span style="font-size:10px;color:#999;">（当前BU+M岗层级→P岗，职级不变）</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.zgOut) + '</td></tr>';
   html += '<tr><td>跨BU调入人数</td><td class="num-col" style="color:#00c853;">' + fmtNumD(d.transferIn) + '</td></tr>';
   html += '<tr><td>跨BU调出人数</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.transferOut) + '</td></tr>';
-  html += '<tr><td>特殊晋升调出<br><span style="font-size:10px;color:#999;">（当前BU+层级→P岗且职级上升）</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.specialPromoOut) + '</td></tr>';
+  html += '<tr><td>特殊晋升调出<br><span style="font-size:10px;color:#999;">（当前BU+M岗层级→P岗且职级上升）</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.specialPromoOut) + '</td></tr>';
   html += '<tr class="net-row"><td>净增（入职-离职+晋升-降级+调入-调出-转岗退出-特殊晋升调出）</td><td class="num-col ' + netClass + '">' + netSign + fmtNumD(d.net) + '</td></tr>';
   html += '</tbody></table>';
 
   html += '<div class="drill-section-title">说明</div>';
   html += '<p style="font-size:11px;color:#888;line-height:1.6;">'
-    + '① 净增明细中的晋升/降级/转岗退出仅统计与P岗之间的流动：P岗→当前BU+层级算晋升、当前BU+层级→P岗且职级下降算降级（-）、当前BU+层级→P岗且职级不变算转岗退出（-）、当前BU+层级→P岗且职级上升算特殊晋升调出（-）。<br>'
+    + '① 净增明细中的晋升/降级/转岗退出仅统计与P岗之间的流动：<br>'
+    + 'P岗→当前BU+M岗层级算晋升；<br>'
+    + '当前BU+M岗层级→P岗且职级下降算降级（-）；<br>'
+    + '当前BU+M岗层级→P岗且职级不变算转岗退出（-）；<br>'
+    + '当前BU+M岗层级→P岗且职级上升算特殊晋升调出（-）。<br>'
     + '② 跨BU调入/调出仅统计type="跨BU调动"的记录，与其余类型互斥不重复。<br>'
     + '③ 数据取自页面下方「明细数据」模块的累计（' + (DRILL_MONTHS.length > 0 ? '1-' + DRILL_MONTHS[DRILL_MONTHS.length-1].replace('月','') + '月' : '全部') + '）记录。</p>';
 
@@ -3677,8 +3681,8 @@ function openPromoDrillModal(bu) {
   }
   html += '</tbody></table>';
   // 口径说明（2026-08-31 改为固定在弹窗底部, 滚动明细时始终可见）
-  var noteHtml = '① 晋升/降级不仅统计与P岗之间的流动（2026-09 起：P岗→当前BU+层级即算晋升，不再区分职级是否改变；当前BU+层级→P岗且职级下降为降级），M岗与M岗之间的层级变动也计入（如基层→中层为晋升，中层→基层、高层→中层为降级）。<br>'
-    + '② 晋升含 P岗→当前BU+层级（2026-09 起不再区分职级是否改变，原「转岗进入」已并入）；转岗退出仅统计当前BU+层级→P岗且职级不变的流动；M岗→P岗且职级上升计为特殊晋升退出。<br>'
+  var noteHtml = '① 晋升/降级不仅统计与P岗之间的流动，M岗与M岗之间的层级变动也计入（如基层→中层为晋升，中层→基层、高层→中层为降级）。<br>'
+    + '② 晋升含 P岗→当前BU+层级；转岗退出仅统计当前BU+层级→P岗且职级不变的流动；M岗→P岗且职级上升计为特殊晋升退出。<br>'
     + '③ 晋升计入变动后BU，降级/转岗退出/特殊晋升退出计入变动前BU；数据取自「明细数据」的调动记录。';
   showDrillModal(title, html, 'promo', bu, '小计', noteHtml);
 }
