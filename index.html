@@ -3393,7 +3393,7 @@ function openNetGrowthModal(bu, level) {
   // 2026-09 口径调整：转岗进入（P岗→当前BU+M岗层级，职级不变）已统一归入「晋升」，
   // 晋升 = P岗→当前BU+M岗层级（不再区分职级是否改变）；转岗退出仍为 当前BU+M岗层级→P岗（职级不变）
   const promoSuffix = '（P岗→当前BU+M岗层级）';
-  const demoSuffix = '（当前BU+M岗层级→P岗，职级下降）';
+  const demoSuffix = '（当前BU+M岗层级→P岗且职级下降）';
 
   let html = '<div class="drill-section-title">净增明细</div>';
   html += '<table class="drill-data-table"><thead><tr><th>指标</th><th class="num-col">人数</th></tr></thead><tbody>';
@@ -3401,7 +3401,7 @@ function openNetGrowthModal(bu, level) {
   html += '<tr><td>累计离职人数</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.resign) + '</td></tr>';
   html += '<tr><td>累计晋升人数<br><span style="font-size:10px;color:#999;">' + promoSuffix + '</span></td><td class="num-col" style="color:#00c853;">' + fmtNumD(d.promo) + '</td></tr>';
   html += '<tr><td>累计降级人数<br><span style="font-size:10px;color:#999;">' + demoSuffix + '</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.demo) + '</td></tr>';
-  html += '<tr><td>累计转岗退出人数<br><span style="font-size:10px;color:#999;">（当前BU+M岗层级→P岗，职级不变）</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.zgOut) + '</td></tr>';
+  html += '<tr><td>累计转岗退出人数<br><span style="font-size:10px;color:#999;">（当前BU+M岗层级→P岗且职级不变）</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.zgOut) + '</td></tr>';
   html += '<tr><td>跨BU调入人数</td><td class="num-col" style="color:#00c853;">' + fmtNumD(d.transferIn) + '</td></tr>';
   html += '<tr><td>跨BU调出人数</td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.transferOut) + '</td></tr>';
   html += '<tr><td>特殊晋升调出<br><span style="font-size:10px;color:#999;">（当前BU+M岗层级→P岗且职级上升）</span></td><td class="num-col" style="color:#ff3333;">' + fmtNumD(d.specialPromoOut) + '</td></tr>';
